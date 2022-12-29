@@ -1,0 +1,21 @@
+# Граф та "normal_cost" взяті з ПЗ 2. Решта взата з ПЗ 4.
+TREE = {
+    "A": {"duration": 3, "crash_duration": 2, "crash_cost": 38, "normal_cost": 30, "depends_on": ["D", "E"]},
+    "B": {"duration": 5, "crash_duration": 4, "crash_cost": 60, "normal_cost": 48, "depends_on": ["F"]},
+    "C": {"duration": 6, "crash_duration": 4, "crash_cost": 53, "normal_cost": 42, "depends_on": ["G"]},
+    "D": {"duration": 2, "crash_duration": 2, "crash_cost": 0, "normal_cost": 36, "depends_on": ["H"]},
+    "E": {"duration": 3, "crash_duration": 3, "crash_cost": 0, "normal_cost": 60, "depends_on": ["I"]},
+    "F": {"duration": 4, "crash_duration": 3, "crash_cost": 30, "normal_cost": 24, "depends_on": ["J", "K"]},
+    "G": {"duration": 7, "crash_duration": 5, "crash_cost": 75, "normal_cost": 60, "depends_on": ["L"]},
+    "H": {"duration": 6, "crash_duration": 4, "crash_cost": 38, "normal_cost": 30, "depends_on": ["M"]},
+    "I": {"duration": 7, "crash_duration": 5, "crash_cost": 60, "normal_cost": 48, "depends_on": ["N"]},
+    "J": {"duration": 5, "crash_duration": 4, "crash_cost": 53, "normal_cost": 42, "depends_on": ["N"]},
+    "K": {"duration": 5, "crash_duration": 4, "crash_cost": 45, "normal_cost": 36, "depends_on": ["O", "Q"]},
+    "L": {"duration": 9, "crash_duration": 6, "crash_cost": 53, "normal_cost": 42, "depends_on": ["P"]},
+    "M": {"duration": 3, "crash_duration": 2, "crash_cost": 120, "normal_cost": 96, "depends_on": ["Q"]},
+    "N": {"duration": 8, "crash_duration": 6, "crash_cost": 83, "normal_cost": 66, "depends_on": ["Q"]},
+    "O": {"duration": 5, "crash_duration": 4, "crash_cost": 60, "normal_cost": 48, "depends_on": []},
+    "P": {"duration": 3, "crash_duration": 2, "crash_cost": 98, "normal_cost": 78, "depends_on": ["R"]},
+    "Q": {"duration": 1, "crash_duration": 1, "crash_cost": 0, "normal_cost": 60, "depends_on": ["R"]},
+    "R": {"duration": 3, "crash_duration": 2, "crash_cost": 113, "normal_cost": 90, "depends_on": []},
+}
